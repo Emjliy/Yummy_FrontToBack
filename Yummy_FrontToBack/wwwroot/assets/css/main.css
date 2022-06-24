@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.navbar .navbar-brand .span {
+  color: #e23a3a;
+}
+
+.navbar .navbar-nav .nav-item {
+  opacity: 0.7;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+  -webkit-text-decoration: red underline;
+          text-decoration: red underline;
+  font-weight: 700;
+  text-underline-offset: 10px;
+}
+
+.navbar .navbar-nav .nav-item .dropdown {
+  background-color: red;
+}
+
+.navbar .button button {
+  background-color: #8f0c0c;
+  border-radius: 10%;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+
+#food-summary {
+  padding: 120px 0;
+  background-color: #5a5d64;
+}
+
+#food-summary .food {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#food-summary .summary {
+  margin-right: 200px;
+}
+
+#food-summary .summary h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+#food-summary .summary p {
+  opacity: 0.7;
+}
+
+#food-summary .summary button {
+  background-color: #8f0c0c;
+  border-radius: 8%;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+
+#food-summary .summary a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+}
+
+#food-summary .summary a .fa-solid {
+  font-size: 20px;
+  margin-right: 5px;
+  border-radius: 100%;
+  border: 1px solid red;
+  padding: 10px 12px;
+  color: red;
+}
+
+#menu {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#menu .menu-header .our-menu {
+  opacity: 0.7;
+}
+
+#menu .menu-header span {
+  font-size: 20px;
+  color: #a04646;
+}
+
+#menu .nav .nav-item:hover {
+  color: #a04646;
+  text-decoration: underline;
+}
+
+#menu .product .product-summary {
+  margin-top: 20px;
+}
+
+#menu .product .product-summary p {
+  opacity: 0.5;
+}
+
+#menu .product .product-summary h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #a04646;
+}
+
+#menu .product-item {
+  padding-top: 20px;
+}
+
+#menu .product-item img {
+  padding: 0 30px;
+}
+
+#menu .product-item .ingredients {
+  opacity: 0.8;
+}
+
+#menu .product-item .price {
+  font-weight: 600;
+  font-size: 30px;
+  color: #a04646;
+}
+
+#book {
+  text-align: center;
+  padding: 70px 0;
+}
+
+#book .test {
+  background-color: #8b8282;
+}
+
+#book .form-table {
+  padding: 50px 30px;
+}
+
+#book .form-table .above,
+#book .form-table .down {
+  font-size: 20px;
+  padding: 20px;
+}
+
+#book .form-table input {
+  padding: 10px 10px;
+  border: none;
+}
+
+#book .form-table textarea {
+  width: 100%;
+}
+
+#book .form-table button {
+  background-color: #8f0c0c;
+  border-radius: 8%;
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  margin: 50px;
+}
+
+#footer {
+  background-color: black;
+}
+
+#footer .footer-summary {
+  padding: 70px 0;
+}
+
+#footer .footer-summary .summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .footer-summary .summary .fa-solid {
+  font-size: 30px;
+  color: white;
+  opacity: 0.5;
+}
+
+#footer .footer-summary .summary .icon-summary {
+  margin-left: 20px;
+}
+
+#footer .footer-summary .summary h2 {
+  color: white;
+  opacity: 0.5;
+}
+
+#footer .footer-summary .summary p {
+  color: white;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 560px) and (max-width: 1000px) {
+  .button button {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

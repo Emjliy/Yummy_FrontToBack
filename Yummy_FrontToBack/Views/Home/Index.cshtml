@@ -1,0 +1,107 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>HomeIndex</h1>
+
+<!-- Main Section Start -->
+<section id="food-summary">
+    <div class="container">
+        <div class="row food ">
+            <div class="col-lg-5 summary">
+                <h2>Enjoy Your Meal <br>Delicious Food</h2>
+                <p>
+                    Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae
+                    cumque eum quaerat.
+                </p>
+                <button class="button">Book a Table </button>
+                <a href="#" class="watch"><i class="fa-solid fa-play"></i>Watch Video</a>
+            </div>
+            <div class="col-lg-5">
+                <img src="~/assets/images/reservation.jpg" alt="food-photo"
+                     class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- Product Section Start -->
+<section id="menu">
+    <div class="container">
+        <div class="menu-header">
+            <p class="our-menu">OUR MENU</p>
+            <p>CHECK OUR <span>YUMMY MENU</span> </p>
+        </div>
+        <ul class="nav justify-content-center ">
+            <li class="nav-item px-3">Starters</li>
+            <li class="nav-item px-3">Breakfast</li>
+            <li class="nav-item px-3">Lunch</li>
+            <li class="nav-item px-3">Dinner</li>
+        </ul>
+        <div class="product">
+            <div class="product-summary">
+                <p>MENU</p>
+                <h3>STARTERS</h3>
+            </div>
+            <div class="row product-item">
+                @foreach (var products in Model.Products)
+                {
+                    <div class="col-lg-4 ">
+
+                        <img src="~/assets/images/@products.ProductImages.FirstOrDefault().URL" alt=""
+                             class="img-fluid">
+                        @Html.Raw(products.Title)
+                        <p class="ingredients">@products.Description</p>
+                        <p class="price">$@products.Price</p>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="book">
+    <div class="container">
+        <div class="book-header">
+            <p>BOOK A TABLE</p>
+            <p>BOOK <span>YOUR STAY</span>WITH US </p>
+        </div>
+        <div class="row test">
+            <div class="col-lg-4">
+                <img src="~/assets/images/reservation.jpg" alt=""
+                     class="img-fluid">
+            </div>
+            <div class="col-lg-8 form-table">
+                <div class="row">
+                    <div class="col-lg-4 above">
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="col-lg-4 above">
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="col-lg-4 above">
+                        <input type="text" placeholder="Your Phone ">
+                    </div>
+                    <div class="col-lg-4 down">
+                        <input type="text" placeholder="Date ">
+                    </div>
+                    <div class="col-lg-4 down">
+                        <input type="text" placeholder="Time">
+                    </div>
+                    <div class="col-lg-4 down">
+                        <input type="text" placeholder="#of people">
+                    </div>
+                </div>
+                <div class=" message">
+                    <textarea name="" id="" cols="500" rows="5" placeholder="Message"></textarea>
+                </div>
+                <button>Book a Table </button>
+            </div>
+
+        </div>
+    </div>
+
+</section>

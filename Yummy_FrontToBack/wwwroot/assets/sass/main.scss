@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+
+    .navbar-brand {
+        font-size: 30px;
+        font-weight: 700;
+
+        .span {
+            color: rgb(226, 58, 58);
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            opacity: 0.7;
+
+            a {
+                &:hover {
+                    text-decoration: red underline;
+                    font-weight: 700;
+                    text-underline-offset: 10px;
+                }
+            }
+
+            .dropdown {
+                background-color: red;
+            }
+        }
+    }
+
+    .button {
+        button {
+            background-color: rgb(143, 12, 12);
+            border-radius: 10%;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            margin-left: 20px;
+        }
+    }
+
+}
+
+#food-summary {
+    padding: 120px 0;
+    background-color: rgb(90, 93, 100);
+
+    .food {
+        align-items: center;
+    }
+
+    .summary {
+        margin-right: 200px;
+
+        h2 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 80px;
+            font-weight: 700;
+        }
+
+        p {
+            opacity: 0.7;
+        }
+
+        button {
+            background-color: rgb(143, 12, 12);
+            border-radius: 8%;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            opacity: 0.7;
+
+            .fa-solid {
+                font-size: 20px;
+                margin-right: 5px;
+                border-radius: 100%;
+                border: 1px solid red;
+                padding: 10px 12px;
+                color: red;
+            }
+        }
+    }
+
+}
+
+#menu {
+    text-align: center;
+    margin-top: 20px;
+
+    .menu-header {
+        .our-menu {
+            opacity: 0.7;
+        }
+
+        span {
+            font-size: 20px;
+            color: rgb(160, 70, 70);
+        }
+    }
+
+    .nav {
+        .nav-item {
+            &:hover {
+                color: rgb(160, 70, 70);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .product {
+        .product-summary {
+            margin-top: 20px;
+
+            p {
+                opacity: 0.5;
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 30px;
+                color: rgb(160, 70, 70);
+            }
+        }
+    }
+
+    .product-item {
+        padding-top: 20px;
+
+        img {
+            padding: 0 30px;
+        }
+
+        .ingredients {
+            opacity: 0.8;
+        }
+
+        .price {
+            font-weight: 600;
+            font-size: 30px;
+            color: rgb(160, 70, 70);
+        }
+    }
+
+}
+
+#book {
+    text-align: center;
+    padding: 70px 0;
+
+    .book-header {
+        p {}
+    }
+
+    .test {
+        background-color: rgb(139, 130, 130);
+    }
+
+    .form-table {
+        padding: 50px 30px;
+
+        .above,
+        .down {
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        input {
+            padding: 10px 10px;
+            border: none;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        button {
+            background-color: rgb(143, 12, 12);
+            border-radius: 8%;
+            border: none;
+            color: white;
+            padding: 10px 50px;
+            margin: 50px;
+        }
+    }
+}
+
+#footer {
+    background-color: black;
+
+    .footer-summary {
+        padding: 70px 0;
+        .summary {
+            display: flex;
+            .fa-solid{
+                font-size: 30px;
+                color: white;
+                opacity: 0.5;
+            }   
+            .icon-summary{
+                margin-left:  20px;
+            }
+            h2{
+                color: white;
+                opacity: 0.5;
+            }
+            p{
+                color: white;
+                opacity: 0.5;
+            }
+        }
+       
+      
+    }
+
+}
+
+@media screen and (min-width:560px) and (max-width:1000px) {
+    .button {
+        button {
+            display: none;
+        }
+    }
+}
